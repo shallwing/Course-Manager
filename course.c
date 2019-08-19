@@ -61,6 +61,11 @@ int main(void)
 			rank(flag);
 			continue;
 		}
+		if(!strncmp("revise", cmd, NAME_LEN))
+		{
+			print_revise();
+			continue;		
+		} 
 		if(!strncmp("clear", cmd, NAME_LEN))
 		{
 			clear();

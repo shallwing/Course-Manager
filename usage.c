@@ -25,6 +25,7 @@ void print_usage()
 	printf("$browse: Print all message of the course\n");
 	printf("$help: Get help\n"); 
 	printf("$delete: Remove a message of the course\n");
+	printf("$revise: Modify the course informaton\n"); 
 	printf("$when: Get the current time\n");
 	printf("$exit: End of this process\n");
 	printf("##Course Attribute##\n");
@@ -35,6 +36,11 @@ void print_usage()
 	printf("$xia: Next semester\n");
 	printf("##Message Format##\n");
 	printf("$  [id]|[name]|[attribute]|[totalTime]|[teachingTime]|[labTime]|[score]|[semester]\n\n");
+}
+
+void print_revise(){
+	printf("There is no direct command to revise the courses' message,\n");
+	printf("please execute the command 'delete', 'add' in sequence to revise the message!\n");
 }
 
 void print_inquire(){

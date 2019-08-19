@@ -11,6 +11,7 @@
 #define	TIME_LEN				32
 
 void gui();
+void print_revise();
 void print_usage();
 void print_rank();
 void print_inquire();
