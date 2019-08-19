@@ -1,4 +1,3 @@
-i
 #include "usage.h" 
 
 void gui()
