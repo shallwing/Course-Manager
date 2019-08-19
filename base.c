@@ -78,7 +78,7 @@ again2:	printf("Please input the course's name:\n");
 		scanf("%d", &add.lab);
 		if(add.total<0 || add.theory<0 || add.lab<0){
 			printf("Invalid argument: the tree arguments must be tree non-negative integers!\n");
-			pritnf("Please try again\n");
+			printf("Please try again\n");
 		}
 		else
 			break;
