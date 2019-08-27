@@ -1,14 +1,14 @@
-#!/bin/bash
+CC=gcc
+object=usage.o base.o
+course: ${object}
 
-chmod u+x ./makefile
+usage.o: usage.c
+	@${CC} usage.c -c 
+base.o: base.c
+	@${CC} base.c -c
 
-gcc base.c -c
-gcc usage.c -c
+course: ${object}
+	@${CC} course.c -o course ${object}
 
-object=`ls ./*.o`
-
-gcc course.c -o course $object
-
-rm $object
-
-#end
+rm:		
+	@rm -rf ${object}
