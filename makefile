@@ -1,14 +1,5 @@
 CC=gcc
-object=usage.o base.o
-course: ${object}
+RESULT=course
 
-usage.o: usage.c
-	@${CC} usage.c -c 
-base.o: base.c
-	@${CC} base.c -c
-
-course: ${object}
-	@${CC} course.c -o course ${object}
-
-rm:		
-	@rm -rf ${object}
+all:
+	${CC} *.c -o ${RESULT}
